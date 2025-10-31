@@ -27,7 +27,7 @@ export default function GestionInsumos() {
       });
       const data = await res.json();
       setInsumos(data);
-    } catch (err) {
+    } catch {
       Swal.fire("Error", "No se pudieron cargar los insumos", "error");
     } finally {
       setLoading(false);
