@@ -115,7 +115,7 @@ export default function PerfilUsuario() {
     const telefono = (user?.telefono ?? "").trim();
 
     if (!nombre || !apellido || !telefono) {
-      let camposFaltantes: string[] = [];
+      const camposFaltantes: string[] = [];
       if (!nombre) camposFaltantes.push("nombre");
       if (!apellido) camposFaltantes.push("apellido");
       if (!telefono) camposFaltantes.push("teléfono");
